@@ -1,0 +1,20 @@
+# 谷歌：用于医疗知识的大型语言模型（Large language models encode clinical knowledge）
+谷歌山景城研究中心发表了一个大型医学语言模型Med-PaLM，在人工评价下，得到的结果不逊于临床医生给出的答案。
+首先，他们使用之前预印发表的Flan-PaLM（参数量540-b），在MedQA，MedMCQA、PubMedQA和MMLU上超过了3个SOTA LLM（Galoida,PubMedGPT和BioGPT）；然后，通过使用instruction prompt tuning，将Flan-PaLM与医学领域结合，得到了Med-PaLM。
+论文中使用了benchmark数据集MultiMedQA（结合了6个已有的医学问答数据集benchmark，涵盖医学考试、医学研究和消费者医学问题）和HealthSearchQA（新的在线搜索医学问题benchmark），用于评测结果。
+
+# 首尔国立大学：通过控制粘度实现 MicroLED 显示器的流体自组装 (Fluidic self-assembly for MicroLED displays by controlled viscosity)
+首尔国立大学发表了一项技术，使用简单的基于搅拌、表面张力驱动的FSA（流体自组装），在60秒内组装了一个由19,000多个圆盘状GaN小芯片（chiplets）组成，直径为45μm，厚度为5μm的MicroLED照明面板，产率达到99.88%。
+由无机LED颗粒/小芯片组成MicroLED显示器在性能上可能优于当前市售的基于有机LED的显示器。这种LED小芯片需要在单独的晶圆上外延生长，然后转移到显示器基板上。转移所需的LED数量巨大，例如50英寸超高清显示屏需要超过 2400万个小于100μm的小芯片。对于小于100μm的小芯片，低惯性导致技术上的挑战，而本次工作中的关键发现是，通过在组装溶液中添加少量泊洛沙姆会增加其粘度，可以增加液体到小芯片的动量传递。
+本次工作代表了FSA在实现低成本、高产量制造全彩MicroLED显示器的最终目标方面取得了重大进展。
+
+# IBM Quantum: 量子增强马尔可夫链蒙特卡罗（Quantum-enhanced Markov chain Monte Carlo）
+量子计算机有望比经典计算机更快地解决某些计算问题（这种情况称为量子加速），但当前由于量子硬件的性能障碍，现有量子加速的工作大多集中在一些经典困难且适合当前量子硬件的问题上，例如从复杂（尽管不是明确有用）的概率分布中采样。
+IBM Quantum使用马尔可夫链蒙特卡罗 (MCMC)算法，对经典Ising模型的玻尔兹曼分布进行采样，实现了量子加速。在统计物理（计算热平均值）和组合优化（模拟退火算法）中，从Ising模型的玻尔兹曼分布μ中进行采样通常是计算瓶颈，因此，这一量子加速很有应用价值。
+与之前的量子算法不同，本次工作能够在理论上保证最终结果收敛到所需的玻尔兹曼分布；从实验上，这一量子算法比常见的经典MCMC替代方案收敛的迭代次数更少，这表明对噪声具有异常的鲁棒性。实验中观察到，相对于经典 MCMC替代方案，量子算法实现了三次和四次之间的多项式加速。
+本次工作为量子计算机解决有用的（而不仅仅是困难的）采样问题开辟了一条新途径。
+
+# 华盛顿大学：利用RFdiffusion从头设计蛋白质结构和功能(De novo design of protein structure and function with RFdiffusion)
+华盛顿大学给出了一个用于蛋白质设计的扩散模型RoseTTAFold Diffusion (RFdiffusion)，能够解决各种设计挑战，包括从头进行binder 设计和高阶对称结构的设计。这一方法通过在蛋白质结构去噪任务上微调（2021年发表于Science的）RoseTTAFold结构预测网络（https://www.science.org/doi/10.1126/science.abj8754），获得了蛋白质主链的生成模型，展现出强大的功能和通用性。
+RFdiffusion的准确性通过冷冻电镜对“a designed binder in complex with Influenza hemagglutinin”测得的结构得到了证实。
+RFdiffusion在使用上类似于根据用户指定的输入生成图像的网络，可以根据简单的分子规格设计多种功能蛋白质。
