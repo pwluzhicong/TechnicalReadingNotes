@@ -15,7 +15,6 @@ IBM Quantum使用马尔可夫链蒙特卡罗 (MCMC)算法，对经典Ising模型
 本次工作为量子计算机解决有用的（而不仅仅是困难的）采样问题开辟了一条新途径。
 
 # 华盛顿大学：利用RFdiffusion从头设计蛋白质结构和功能(De novo design of protein structure and function with RFdiffusion)
-华盛顿大学给出了一个用于蛋白质设计的扩散模型RoseTTAFold Diffusion (RFdiffusion)，能够解决各种设计挑战，包括从头进行binder 设计和高阶对称结构的设计。这一方法通过在蛋白质结构去噪任务上微调（2021年发表于Science的）RoseTTAFold结构预测网络（https://www.science.org/doi/10.1126/science.abj8754）
-，获得了蛋白质主链的生成模型，展现出强大的功能和通用性。
+华盛顿大学给出了一个用于蛋白质设计的扩散模型RoseTTAFold Diffusion (RFdiffusion)，能够解决各种设计挑战，包括从头进行binder 设计和高阶对称结构的设计。这一方法通过在蛋白质结构去噪任务上微调（2021年发表于Science的）RoseTTAFold结构预测网络(https://www.science.org/doi/10.1126/science.abj8754)，获得了蛋白质主链的生成模型，展现出强大的功能和通用性。
 RFdiffusion的准确性通过冷冻电镜对“a designed binder in complex with Influenza hemagglutinin”测得的结构得到了证实。
 RFdiffusion在使用上类似于根据用户指定的输入生成图像的网络，可以根据简单的分子规格设计多种功能蛋白质。
