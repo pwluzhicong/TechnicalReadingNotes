@@ -1,6 +1,8 @@
 # 谷歌：用于医疗知识的大型语言模型（Large language models encode clinical knowledge）
 谷歌山景城研究中心发表了一个大型医学语言模型Med-PaLM，在人工评价下，得到的结果不逊于临床医生给出的答案。
+
 首先，他们使用之前预印发表的Flan-PaLM（参数量540-b），在MedQA，MedMCQA、PubMedQA和MMLU上超过了3个SOTA LLM（Galoida,PubMedGPT和BioGPT）；然后，通过使用instruction prompt tuning，将Flan-PaLM与医学领域结合，得到了Med-PaLM。
+
 论文中使用了benchmark数据集MultiMedQA（结合了6个已有的医学问答数据集benchmark，涵盖医学考试、医学研究和消费者医学问题）和HealthSearchQA（新的在线搜索医学问题benchmark），用于评测结果。
 
 # 首尔国立大学：通过控制粘度实现 MicroLED 显示器的流体自组装 (Fluidic self-assembly for MicroLED displays by controlled viscosity)
